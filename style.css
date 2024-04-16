@@ -1,0 +1,248 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  
+  }
+  body::before {
+    background: url("https://images.pexels.com/photos/1731534/pexels-photo-1731534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
+    background-size: cover;
+    position: fixed;
+    top:0px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+
+}
+@keyframes slideInFromTop {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+  
+  .container {
+   
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+animation: slideInFromTop 1s ease-in-out;
+transition:transform 0.3s ease;
+  }
+  
+  .container ul li {
+    list-style: none;
+  }
+  .logo{
+    float:left;
+    margin:-9px -33px
+  } 
+  .container ul a {
+    text-decoration: none;
+    color: black;
+   
+  }
+
+ /* Apply size animation on hover to navigation bar items */
+.container ul li a {
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.container ul li a:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  color:blue;
+}
+
+  
+  header ul {
+    display: flex;
+    gap: 2rem;
+    margin: 15px 6px;
+    padding:1px 1px;
+    margin-left: 68px;
+
+  }
+  
+  header img {
+    height: 50px;
+    width: 50px;
+  }
+  
+.lead{
+  /* 3rem */
+  text-transform: capitalize;
+}
+#heading1{
+  margin: 8px 93px;
+  /* padding: 1px 1px; */
+
+  font-size: clamp(4rem, 40vw, 6rem)
+}
+#heading2{
+  margin:13px 85px;
+  padding: 4px 4px;
+  font-weight: 300;
+  font-size:  clamp(1.5rem, 40vw, 4rem)
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Responsive layout */
+@media only screen and (max-width: 768px) {
+  .container nav ul {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .heading {
+    text-align: center;
+  }
+  #heading1 {
+    margin: 20px auto;
+  }
+  #heading2 {
+    margin: 10px auto;
+  }
+  main img {
+    height: 200px;
+    width: 200px;
+  }
+}
+  main {
+    height:100%;
+    width:90%;
+    margin:23px 48px;
+   display:flex;
+   flex-flow:row wrap;
+   gap :1.3rem;
+   justify-content: space-evenly;
+   
+  }
+
+    /* Apply animation to box */
+
+  main .box{
+   background-color: rgba(203, 195, 195, 0.783);
+    box-shadow:8px 10px 20px ;
+    border:2px solid black;
+    border-radius:10px;
+    padding :8px 10px;
+    margin:15px 10px;
+    height:450px;
+    width:220px;
+    animation: fadeInUp 1s ease-out;
+   transition:transform 0.3s ease;
+
+  }
+  main .box:hover{
+    transform:scale(1.1);
+   }
+  
+  /* Apply animation to images */
+main img {
+
+  height: 150px;
+  width: 190px;
+  border-radius:10px;
+  margin:3px 3px;
+  animation: fadeInUp 1s ease-out;
+   transition:transform 0.3s ease;
+}
+ main img:hover{
+  transform:scale(1.1);
+ }
+ main .lead{
+  font-size:14px;
+  font-weight:bold;
+ }
+ footer{
+  position:absoulte;;
+  bottom:0px;
+ }
+ footer .box9{
+ 
+   height:40%;
+   width:100%;
+   margin-top:30px;
+   /* border:2px solid black; */
+   background-color: rgba(128, 128, 128, 0.387);
+ }
+  footer .ul1{
+    display:flex; 
+    gap:1rem;
+    justify-content:center;
+    margin-left:-44px;
+    margin-top:34px;
+  }
+  footer .ul1 li{
+ list-style:none;
+ margin-top:6px;
+  }
+  .ul1 a{
+    margin:1px 6px;
+    font-size:1.2rem;
+    color:black;
+   
+  }
+  /* animation to the icons */
+  .ul1 li a i {
+    transition: transform .1s ease-in-out; /* Add transition for smooth animation */
+   
+  }
+  
+  .ul1 li a:hover i {
+   color:blue;
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  footer .Heading{
+    margin-left:10px;
+    margin-top:-16px;
+  }
+  /* responsive layout */
+  @media only screen and (max-width: 767px){
+ h1,h2 {
+          
+         text-align:center;
+ }
+  }
+  footer .ul2{
+    display:flex;
+    gap:2rem;
+    justify-content: center;
+    
+  }
+  .ul2 li{
+    list-style:none;
+  }
+  .ul2 li a{
+    text-decoration: none;
+    color:black;
+  }
+  .ul2 li a:hover{
+    text-decoration: none;
+    color:blue;
+    /* text-decoration:underline;
+     text-decoration-color: black; */
+  }
+
+ footer .lead{
+  text-align:center;
+font-weight:400;
+ 
+ }
+
+
+ 
